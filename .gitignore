@@ -1,0 +1,44 @@
+# Local environment files
+.env
+
+# PyCharm configuration files
+.idea/
+
+# Compiled Python files
+*.pyc
+*.pyo
+__pycache__
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other PyCharm-specific files
+*.iml
+*.ipr
+*.iws
+
+# Local history
+.idea/workspace.xml
+
+# Exclude user-specific PyCharm settings
+.idea/*.xml
+.idea/*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore coverage reports
+.coverage
+
+# Ignore logs
+logs/
+
+# Ignore temporary files
+*.swp
+*~
