@@ -1,0 +1,32 @@
+# Ignore common Django development files
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore local development settings
+.env
+
+# Ignore database files
+db.sqlite3
+
+# Ignore static files directory if managed differently
+/staticfiles
+
+# Ignore media files directory if managed differently
+/media
+
+# Ignore Docker-specific files
+.dockerignore
+Dockerfile
+
+# Environments
+.env
+.venv
+venv
+
+.DS_Store
