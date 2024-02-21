@@ -1,5 +1,6 @@
 # Local environment files
 .env
+.kube
 
 # PyCharm configuration files
 .idea/
