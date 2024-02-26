@@ -24,9 +24,10 @@ SECRET_KEY = 'django-insecure-*ml05c5wjjr6ln#t_h7(vtad@_jqvn*^h43d&zt$m&y9#0!-dm
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.environ.get("DEBUG")) == "1"
-
-ALLOWED_HOSTS = []
-
+ENV_ALLOWED_HOST = os.environ.get("ENV_ALLOWED_HOST")
+ALLOWED_HOSTS = ["138.68.118.112"]
+if ENV_ALLOWED_HOST:
+    ALLOWED_HOSTS = [ENV_ALLOWED_HOST]
 
 # Application definition
 
@@ -107,7 +108,7 @@ if DB_IS_AVAILABLE:
     }
 
     if not DB_IGNORE_SSL:
-        DATABASES["default"]["OPTIONS"] == {
+        DATABASES["default"]["OPTIONS"] = {
             "sslmode": "require"
         }
 

@@ -43,3 +43,8 @@ on Digital Ocean run the following command.
 $Env:KUBECONFIG="$HOME\PycharmProjects\django_k8s\.kube\kubeconfig.yaml"
 ```
 We can also set this up on our local code editor depending on which one we are using.
+
+In order to access and go inside any pod this is the command which you would need to execute.
+```commandline
+kubectl exec -it [name_of_pod] -- /bin/bash
+```
