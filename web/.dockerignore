@@ -9,6 +9,7 @@ __pycache__
 .idea/
 
 # Ignore local development settings
+.env.prod
 .env
 
 # Ignore database files
@@ -25,8 +26,9 @@ db.sqlite3
 Dockerfile
 
 # Environments
-.env
 .venv
 venv
 
+.kube
 .DS_Store
+
