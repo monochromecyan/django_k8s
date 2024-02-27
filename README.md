@@ -48,3 +48,8 @@ In order to access and go inside any pod this is the command which you would nee
 ```commandline
 kubectl exec -it [name_of_pod] -- /bin/bash
 ```
+
+Then activate the virtual environment inside the pod.
+```commandline
+source /opt/venv/bin/activate
+```
