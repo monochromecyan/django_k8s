@@ -53,3 +53,8 @@ Then activate the virtual environment inside the pod.
 ```commandline
 source /opt/venv/bin/activate
 ```
+
+You will need to create a secret key, with kubernetes secrets
+```commandline
+kubectl create secret generic django-k8s-web-prod-env --from-env-file=web/.env.prod
+```
